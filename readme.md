@@ -6,5 +6,3 @@ Este repositorio contiene utilidades en Go. Actualmente, incluye una función qu
 
 - **ToTitleCase:** Convierte una cadena de texto en formato *title case*.
 - Ejemplo de pruebas unitarias utilizando *table-driven tests*.
-
-    ```
