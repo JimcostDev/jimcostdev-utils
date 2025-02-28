@@ -1,0 +1,21 @@
+# Binarios para programas y plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Binarios de tests y salida de compilación
+*.test
+*.out
+
+# Directorio de dependencias (si usas vendor)
+vendor/
+
+# Archivos de configuración de editores/IDEs
+.vscode/
+.idea/
+
+# Archivos temporales o de logs
+*.log
+*.tmp
