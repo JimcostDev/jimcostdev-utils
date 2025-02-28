@@ -7,5 +7,7 @@ import (
 )
 
 func main() {
-	fmt.Println(strutils.ToTitleCase("hola mundo"))
+	texto := "hola mundo desde go"
+	resultado := strutils.ToTitleCase(texto)
+	fmt.Println(resultado) // Imprime: Hola Mundo Desde Go
 }
