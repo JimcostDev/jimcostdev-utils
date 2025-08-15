@@ -1,10 +1,36 @@
 # jimcostdev-utils
 
-Este repositorio contiene utilidades en Go. Actualmente, incluye las siguientes funciones:
+Utilidades Go para manipulación de cadenas y generación de números aleatorios únicos.
 
-- **ToTitleCase:** Convierte una cadena de texto a formato *title case*, es decir, transforma la primera letra de cada palabra a mayúscula.
-- **UniqueDigits:** Devuelve una cadena de dígitos únicos aleatorios. La longitud de la cadena será igual a `count`. Si `count` es mayor que 1, el primer dígito nunca será cero. La función retorna una cadena vacía si el valor de `count` es menor que 1 o mayor que 10.
+## Descripción
 
-## Características
+Paquete de utilidades en Go que incluye funciones para:
 
-- Ejemplo de pruebas unitarias utilizando *table-driven tests* para ambas funciones.
+- Formatear cadenas en estilo título (`strutils.TitleCase`)
+- Generar números aleatorios de `n` dígitos sin repetir dígitos (`random.RandomNDigits`)
+
+Ideal para proyectos que requieren manipulación avanzada de texto y generación de identificadores numéricos únicos.
+
+## Instalación
+
+```bash
+go get github.com/JimcostDev/jimcostdev-utils@latest
+```
+
+## Uso
+
+```go
+import "github.com/JimcostDev/jimcostdev-utils/strutils"
+import "github.com/JimcostDev/jimcostdev-utils/random"
+```
+
+## Ejemplo
+
+```go
+title := strutils.TitleCase("hola mundo")
+num := random.RandomNDigits(5)
+```
+
+## Licencia
+
+MIT
